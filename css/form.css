@@ -1,0 +1,68 @@
+input:focus, button:focus{
+    outline: none;
+}
+
+.formulaire
+{
+    margin: 0 auto;
+    padding: 10rem;
+}
+
+.formulaire h1
+{
+    color: white;
+    text-align: center;
+    font-size: 3.5rem;
+}
+
+form
+{
+    width: 50rem;
+    padding: 3rem;
+    background-color: #ffa000;
+    margin: 0 auto;
+    margin-top: 5rem;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+label
+{
+    font-size: 2rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    color: white;
+}
+
+input
+{
+    font-size: 2rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+form div
+{
+    text-align: center;
+    padding: 2rem;
+    width: 15rem;
+    background-color: #87dff0;
+    font-size: 2rem;
+    margin: 0 auto;
+    border-radius: 1rem;
+    border: none;
+}
+
+form div a
+{
+    color: white;
+    text-decoration: none;
+}
+
+footer
+{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}

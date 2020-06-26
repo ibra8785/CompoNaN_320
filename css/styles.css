@@ -1,0 +1,651 @@
+:root
+{
+    --color-font: #fedcb0;
+    --color-side: #332b7c;
+    --color-orange: #ffa000;
+    --color-red: #f35666;
+    --color-green: #87dff0;
+}
+
+/* _____ GENERAL _____*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html
+{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body
+{
+    font-size: 1rem;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Main content CSS */
+
+.mainContent
+{
+    min-height: 100vh;
+    width: 100%;
+    background-color: var(--color-font);
+    padding: 7rem 3rem 0 3rem;
+}
+
+.content
+{
+    min-height: 50rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 3rem;
+    padding: 2rem;
+}
+
+/* SideBar CSS */
+
+.sideBar
+{
+    min-height: 85rem;
+    width: 100%;
+    background-color: var(--color-side);
+    padding: 1rem;
+    border-radius: 3rem;
+    position: relative;
+}
+
+.sideBar__Title 
+{
+    padding: 3rem 0;
+    text-align: center;
+}
+
+.sideBar__Title p
+{
+    color: #ccc;
+    font-size: 2rem;
+}
+
+.sideBar__Title span
+{
+    color: white;
+    font-weight: bold;
+}
+
+.sideBarIcon
+{
+    margin-top: 4rem;
+}
+
+.sideBarIcon .icon
+{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+}
+
+.sideBarIcon .icon img
+{
+    height: 5rem;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sideBarIcon .iconbas
+{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+}
+
+.icon:active
+{
+    background-color: white;
+}
+
+/* Contenu Milieu CSS */
+
+.contenuMilieu
+{
+    background-color: white;
+    min-height: 50rem;
+    width: 100%;
+    padding: 3rem;
+}
+
+.cardHello
+{
+    min-height: 8rem;
+    width: 100%;
+    background-color: var(--color-orange);
+    border-radius: 2.5rem;
+    padding: 2rem;
+}
+
+.cardHello h2
+{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.cardHello p
+{
+    color: #ffedd4;
+    font-size: 2rem;
+}
+
+.cardHello__Pic
+{
+    height: 5rem;
+}
+
+.cardHello__Pic img
+{
+    height: 5rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.calendar
+{
+    padding: 2rem 0;
+}
+
+.month
+{
+    justify-content: space-between;
+    border-bottom: solid 1px #f6f6fc;
+}
+
+.december p
+{
+    font-size: 2rem;
+    color: #5f5b8e;
+}
+
+.decemberFleche
+{
+    height: 3rem;
+    width: 6rem;
+    background-color: var(--color-red);
+    margin: 0rem 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.decemberFleche a
+{
+    color: white;
+    font-size: 1.6rem;
+}
+
+.month2
+{
+    width: 8rem;
+    height: 3rem;
+    background-color: #f6f6fc;
+    border-radius: 1rem;
+    padding: .2rem .5rem;
+}
+
+.month2 img
+{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.month2 p
+{
+    font-size: 1.4rem;
+    color: grey;
+    margin-left: .5rem;
+}
+
+.calendarContent
+{
+    padding: 2rem 3rem;
+    font-size: 1.4rem;
+    text-align: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #f6f6fc;
+}
+
+.calendarContent p
+{
+    font-weight: bold;
+}
+
+.calendarContent span
+{
+    color: #ccc;
+}
+
+.day .point1
+{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--color-red);
+    margin: 0 auto;
+}
+
+.rouge
+{
+    min-height: 4rem;
+    width: 5rem;
+    background-color: var(--color-red);
+    padding: 0.5rem;
+    color: white;
+    border-radius: 1.5rem;
+}
+
+.rouge .point1
+{
+    background-color: white;
+}
+
+.weekly
+{
+    padding: 2rem 0;
+    color: #5f5b8e;
+}
+
+.weeklyReport
+{
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+
+.weeklyLinks a
+{
+    color: #CCC;
+    font-size: 1.6rem;
+    margin-left: 2rem;
+    text-decoration: none;
+}
+
+.weeklyCard
+{
+    justify-content: space-between;
+}
+
+.weekly__cardContent
+{
+    height: 20rem;
+    width: 14rem;
+    border-radius: 1rem;
+    text-align: center;
+    padding: 1rem;
+    border: 1px solid var(--color-green);
+}
+
+.weeklyCard .card1
+{
+    box-shadow: 1px 1px 1px 1px rgba(160, 157, 157, 0.5);
+    border: none;
+}
+
+.iconWeekly
+{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 1rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    border: 1px solid var(--color-green);
+}
+
+.weekly__cardContent p
+{
+    font-size: 1.4rem;
+}
+
+.icon1
+{
+    background-color: var(--color-orange);
+    border: none;
+}
+
+.cardInCard
+{
+    margin-top: 2rem;
+    height: 4rem;
+    width: 12rem;
+    border-radius: 1rem;
+    background-color: var(--color-orange);
+    text-align: center;
+    padding-top: 1rem;
+    color: white;
+}
+
+.update h2
+{
+    color: #5f5b8e;
+}
+
+.updateCard
+{
+    margin-top: 2rem;
+    justify-content: space-around;
+}
+
+.updateCard1
+{
+    flex: 1;
+    height: 12rem;
+    box-shadow: 1px 1px 1px 1px rgba(160, 157, 157, 0.5);
+    border-radius: 2rem;
+    padding: 2rem;
+    justify-content: space-between;
+    margin-right: 2rem;
+}
+
+.updateCard1__text p
+{
+    color: #5f5b8e;
+    font-size: 1.7rem;
+}
+
+.updateCard1__text span
+{
+    color: #ccc;
+    font-size: 1.4rem;
+}
+
+.trait
+{
+    height: 6rem;
+    width: 1px;
+    background-color: #ccc;
+}
+
+.percentUdapte
+{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    text-align: center;
+    padding: 2rem 0;
+    border-top-color: red;
+}
+
+.orangepercent
+{
+    border-top: 3px solid var(--color-orange);
+    border-right: 3px solid var(--color-orange);
+}
+
+.percentUdapte p
+{
+    font-size: 1.4rem;
+    color: #5f5b8e;
+    font-weight: bold;
+}
+
+.updateCard2
+{
+    flex: 1;
+    height: 12rem;
+    box-shadow: 1px 1px 1px 1px rgba(160, 157, 157, 0.5);
+    border-radius: 2rem;
+    padding: 2rem;
+    justify-content: space-between;
+    margin-left: 2rem;
+    background-color: var(--color-side);
+}
+
+.updateCard2 p {
+    color: white;
+}
+
+/* Contenu Droit */
+
+.contenuDroit
+{
+
+}
+
+.profile
+{
+    float: right;
+}
+
+.iconProfile
+{
+    height: 5rem;
+    width: 12rem;
+    margin-top: 1.5rem;
+    margin-right: -4rem;
+}
+
+.iconProfile img
+{
+    height: 3rem;
+    width: 3rem;
+    object-fit: cover;
+}
+
+.picProfile
+{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 1rem;
+}
+
+.picProfile img
+{
+    height: 5rem;
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.bigCard
+{
+    min-height: 5rem;
+    width: 107.3%;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    background-color: #f6f6fc;
+    clear: both;
+    padding: 3rem 4rem;
+}
+
+.cardFunction
+{
+    margin-top: 3rem;
+}
+
+.cardFunction__content
+{
+    min-height: 10rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contentHaut
+{
+    min-height: 4rem;
+    width: 100%;
+    background-color: var(--color-red);
+    border-radius: 1rem;
+    padding: .6rem .7rem;
+    justify-content: space-between;
+}
+
+.contentHaut2
+{
+    background-color: var(--color-orange);
+}
+
+.contentHaut3
+{
+    background-color: var(--color-green);
+}
+
+.contentHaut4
+{
+    background-color: #e7e7f7;
+}
+
+.iconFunction
+{
+    height: 4rem;
+    width: 4rem;
+    background-color: #f57885;
+    border-radius: 1rem;
+}
+
+.iconFunction2
+{
+    background-color: #ffb333
+}
+
+.iconFunction3
+{
+    background-color: #9fe5f3;
+}
+
+.iconFunction4
+{
+    background-color: #f5f5fb;
+}
+
+.contentHaut a
+{
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.contentBas
+{
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    color: #605c8f;
+    justify-content: space-between;
+}
+
+.contentBasButton
+{
+    height: 2rem;
+    width: 4rem;
+    background-color: #fcdee1;
+    border-radius: 1rem;
+}
+
+.contentBasButton2
+{
+    background-color: #ffedcc;
+}
+
+.contentBasButton3
+{
+    background-color: #e8f9fc;
+}
+
+.contentBasButton4
+{
+    background-color: #e4e4f6;
+}
+
+.contentBasButton .button
+{
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--color-red);
+    border-radius: 50%;
+    float: right;
+}
+
+.contentBasButton2 .button2
+{
+    background-color: var(--color-orange);
+}
+
+.contentBasButton3 .button3
+{
+    background-color: var(--color-green);
+}
+
+.contentBasButton4 .button4
+{
+    background-color: #bbb9da;
+    float: left;
+}
+
+.statistic
+{
+    margin-top: 1rem;
+}
+
+.statistic h2
+{
+    margin-bottom: 3rem;
+}
+
+.statisticCard
+{
+    padding: 3rem;
+    min-height: 20rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 1rem;
+}
+
+.current
+{
+    justify-content: space-between;
+}
+
+.currentButton
+{
+    height: 4rem;
+    width: 9rem;
+    border: 1px solid #ccc;
+    border-radius: 1rem;
+    padding: .3rem .5rem;
+}
+
+.currentButton .graphButton
+{
+    height: 3rem;
+    width: 4rem;
+    background-color: var(--color-orange);
+    border-radius: 1rem;
+}
+
+.graph
+{
+    justify-content: space-between;
+}
+
+.dayGraphStat
+{
+    height: 13rem;
+    width: 1rem;
+    background-color: var(--color-green);
+    margin: 0 auto;
+}
+
+.graphColor
+{
+    height: 3rem;
+    width: 1rem;
+    background-color: #efeefa;
+}
